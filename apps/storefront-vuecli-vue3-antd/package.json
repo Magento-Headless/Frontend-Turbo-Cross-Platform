@@ -1,0 +1,30 @@
+{
+  "name": "storefront-vue-cli-vue3-antd",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "register-service-worker": "^1.7.2",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0",
+    "@headless/vue3-antd": "*"
+  },
+  "devDependencies": {
+    "eslint-config-vue3": "*",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0"
+  }
+}
