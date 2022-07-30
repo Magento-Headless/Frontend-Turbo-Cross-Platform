@@ -6,21 +6,25 @@
     "apps/*",
     "packages/*"
   ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "latest",
-    "turbo": "latest"
-  },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
+  "packageManager": "yarn@1.22.18",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "prepare": "husky install"
+  },
   "dependencies": {},
-  "packageManager": "yarn@1.22.18"
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "eslint-config-vue3": "*",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "latest",
+    "turbo": "latest"
+  }
 }

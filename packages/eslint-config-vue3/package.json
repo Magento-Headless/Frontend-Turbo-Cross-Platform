@@ -1,0 +1,20 @@
+{
+  "name": "eslint-config-vue3",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vuejs-accessibility": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
