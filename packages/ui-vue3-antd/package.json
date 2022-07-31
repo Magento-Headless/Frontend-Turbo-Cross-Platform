@@ -14,6 +14,9 @@
     "lint": "eslint \"**/*.{js,vue,md}\" --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
+  "dependencies": {
+    "ant-design-vue": "^3.2.10"
+  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-vue3": "*"

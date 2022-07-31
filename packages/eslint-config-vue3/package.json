@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0"
+    "eslint": "^7.32.0"
   },
   "devDependencies": {
     "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
     "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.0.3",
     "eslint-plugin-vuejs-accessibility": "^1.1.0"
   },

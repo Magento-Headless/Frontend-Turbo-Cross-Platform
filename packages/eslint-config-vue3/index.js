@@ -7,15 +7,7 @@ module.exports = {
   rules: {
     camelcase: 0,
     'consistent-return': 'off',
-    'import/extensions': [
-      'error',
-      'always',
-      {
-        mjs: 'never',
-        js: 'never',
-        vue: 'never'
-      }
-    ],
+    'import/extensions': 'off',
     'import/prefer-default-export': 'off',
     'import/no-named-as-default': 'off',
     'import/no-extraneous-dependencies': [
