@@ -1,13 +1,14 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
-  extends: [
-    'vue3'
-  ],
+  extends: ['vue3'],
   parserOptions: {
     parser: '@babel/eslint-parser',
     requireConfigFile: false
+  },
+  rules: {
+    'import/no-unresolved': 'off'
   }
 }

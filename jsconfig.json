@@ -1,0 +1,3 @@
+{
+	"extends": "./apps/storefront-vue-cli-vue3-antd/jsconfig.json"
+}
