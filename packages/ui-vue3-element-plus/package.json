@@ -1,5 +1,5 @@
 {
-  "name": "@headless/vue3-antd",
+  "name": "@headless/vue3-element-plus",
   "version": "0.0.0",
   "main": "index.js",
   "sideEffects": false,
@@ -8,7 +8,7 @@
     "lint": "eslint \"**/*.{js,vue,md}\" --fix"
   },
   "dependencies": {
-    "ant-design-vue": "^3.2.10"
+    "element-plus": "^2.2.12"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
