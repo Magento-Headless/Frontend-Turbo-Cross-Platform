@@ -1,18 +1,14 @@
 {
   "name": "@headless/vue3-antd",
   "version": "0.0.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "index.js",
   "sideEffects": false,
   "license": "MIT",
   "files": [
     "dist/**"
   ],
   "scripts": {
-    "build": "node index.js --format esm,cjs --dts --external vue",
-    "dev": "node index.js --format esm,cjs --watch --dts --external vue",
-    "lint": "eslint \"**/*.{js,vue,md}\" --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "lint": "eslint \"**/*.{js,vue,md}\" --fix"
   },
   "dependencies": {
     "ant-design-vue": "^3.2.10"
