@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 
-import getStoreConfig from './graphql/getStoreConfig.gql'
+import getStoreConfig from '../src/graphql/getStoreConfig.gql'
 
-import { useQuery } from './hooks'
+import { useQuery } from '../hooks'
 
 const App = () => {
   const fetchStoreQuery = useQuery(getStoreConfig)

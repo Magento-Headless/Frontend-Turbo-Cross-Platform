@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@components/*": ["components/*"],
+      "@graphql/*": ["graphql/*"],
+      "@pages/*": ["pages/*"],
+      "@store/*": ["store/*"],
+      "@talons/*": ["talons/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
+  
