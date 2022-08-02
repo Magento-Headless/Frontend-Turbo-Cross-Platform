@@ -21,7 +21,7 @@ export const useQuery = (document) => {
         variables: JSON.stringify(variables)
       }
       const url = formatURL(query)
-      const apiURL = shrinkQuery(`${import.meta.env.REACT_APP_GRAPHQL_URL}/graphql?${url}`)
+      const apiURL = shrinkQuery(`${import.meta.env.REACT_APP_HOST_URL}/api-graphql?${url}`)
 
       const response = await fetch(apiURL, {
         ...defaults,

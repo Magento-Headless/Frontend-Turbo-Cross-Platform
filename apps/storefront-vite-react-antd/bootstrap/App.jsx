@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 
-import getStoreConfig from '../src/graphql/getStoreConfig.gql'
-
+import getStoreConfig from '@graphql/getStoreConfig.gql'
 import { useQuery } from '../hooks'
+
+import Header from '@components/Header'
 
 const App = () => {
   const fetchStoreQuery = useQuery(getStoreConfig)
@@ -18,6 +19,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
