@@ -1,0 +1,16 @@
+query getStoreConfig {
+  storeConfig {
+    code
+    copyright
+    locale
+    logo_alt
+    logo_height
+    logo_width
+    id
+    logo_src: header_logo_src
+    store_name
+    secure_base_url
+    secure_base_media_url
+    welcome
+  }
+}
