@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.37",
-    "@headless/vue3-antd": "*"
+    "@headless/vue3-antd": "*",
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "eslint-config-vue3": "*",
+    "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue": "^3.0.0",
-    "vite": "^3.0.0"
+    "eslint-config-vue3": "*",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.0",
+    "vite": "^3.0.0",
+    "vite-plugin-imp": "^2.2.0"
   }
 }
