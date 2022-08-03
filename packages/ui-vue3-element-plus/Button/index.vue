@@ -1,15 +1,15 @@
 <template>
-  <Button>
+  <ElButton>
     <slot />
-  </Button>
+  </ElButton>
 </template>
 
 <script>
-import { Button } from 'element-plus'
+import { ElButton } from 'element-plus'
 
 export default {
   components: {
-    Button
+    ElButton
   }
 }
 </script>
