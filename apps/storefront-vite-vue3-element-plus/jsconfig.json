@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@components/*": ["components/*"],

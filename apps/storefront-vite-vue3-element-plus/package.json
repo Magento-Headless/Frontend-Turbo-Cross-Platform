@@ -16,6 +16,8 @@
     "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue": "^3.0.0",
     "eslint-config-vue3": "*",
+    "rollup-plugin-visualizer": "^5.7.1",
+    "sass": "^1.54.2",
     "unplugin-auto-import": "^0.10.3",
     "unplugin-vue-components": "^0.21.2",
     "vite": "^3.0.0"
