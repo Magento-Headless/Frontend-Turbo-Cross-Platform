@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
     "baseUrl": ".",
+    "jsx": "preserve",
+    "moduleResolution": "node",
     "paths": {
       "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@router/*": ["router/*"],
+      "@store/*": ["store/*"],
+      "@utils/*": ["utils/*"]
     }
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "styles"]
 }
