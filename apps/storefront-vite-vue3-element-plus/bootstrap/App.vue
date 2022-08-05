@@ -1,16 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <ConfigProvider :namespace="namespace">
     <Header />
     <Button>Button</Button>
+    <router-view />
   </ConfigProvider>
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
 import { ConfigProvider, Button } from '@headless/vue3-element-plus'
 
 import Header from '@components/Header'
@@ -23,9 +21,14 @@ export default defineComponent({
     Button
   },
   setup() {
+    const { commit } = useStore()
     const namespace = ref(null)
 
     namespace.value = 'headless'
+
+    onMounted(() => {
+      commit('app/saveStoreConfig', { currency: 'USD' })
+    })
 
     return {
       namespace
