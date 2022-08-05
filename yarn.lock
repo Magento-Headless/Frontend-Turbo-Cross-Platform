@@ -1591,7 +1591,7 @@
     "@types/eslint" "*"
     "@types/estree" "*"
 
-"@types/eslint@*", "@types/eslint@^7.29.0 || ^8.4.1":
+"@types/eslint@*", "@types/eslint@^7.29.0 || ^8.4.1", "@types/eslint@^8.4.5":
   version "8.4.5"
   resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-8.4.5.tgz#acdfb7dd36b91cc5d812d7c093811a8f3d9b31e4"
   integrity sha512-dhsC09y1gpJWnK+Ff4SGvCuSnk9DaU0BJZSzOwa6GVSg65XtTugLBITDAAzRU5duGBoXBHpdR/9jHGxJjNflJQ==
@@ -7303,7 +7303,7 @@ rollup-plugin-visualizer@^5.7.1:
     source-map "^0.7.3"
     yargs "^17.5.1"
 
-rollup@^2.43.1, rollup@^2.75.6:
+rollup@^2.43.1, rollup@^2.75.6, rollup@^2.77.0:
   version "2.77.2"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.77.2.tgz#6b6075c55f9cc2040a5912e6e062151e42e2c4e3"
   integrity sha512-m/4YzYgLcpMQbxX3NmAqDvwLATZzxt8bIegO78FZLl+lAgKJBd1DRAOeEiZcKOIOPjxE6ewHWHNgGEalFXuz1g==
@@ -8470,6 +8470,15 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
+
+vite-plugin-eslint@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-eslint/-/vite-plugin-eslint-1.7.0.tgz#195a19bc059fb40364c863f38924d556a623fb80"
+  integrity sha512-Kz2HwBeAArmsE0QmWSm+e7CaEQrfMkEZpFw4hngoy6JmERjw7WUH8HLbG1OkreOKX4iIUReOss9N1Mkw4wEk8g==
+  dependencies:
+    "@rollup/pluginutils" "^4.2.1"
+    "@types/eslint" "^8.4.5"
+    rollup "^2.77.0"
 
 vite-plugin-imp@^2.2.0:
   version "2.2.0"

@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from 'vite'
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
+import eslint from 'vite-plugin-eslint'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
@@ -20,6 +21,10 @@ export default ({ mode }) => {
       }
     },
     plugins: [
+      eslint({
+        cache: false,
+        fix: true
+      }),
       legacy({
         targets: ['> 1%, last 1 version, ie >= 11'],
         additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
