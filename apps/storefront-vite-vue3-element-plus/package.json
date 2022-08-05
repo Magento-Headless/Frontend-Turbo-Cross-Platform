@@ -2,7 +2,6 @@
   "name": "storefront-vite-vue3-element-plus",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +12,7 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
     "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue": "^3.0.0",
     "eslint-config-vue3": "*",

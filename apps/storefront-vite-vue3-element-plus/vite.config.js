@@ -8,8 +8,8 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default ({ mode }) => {
-  process.env = { ...process.env, ...loadEnv(mode, process.cwd(), 'VUE_')}
-  
+  process.env = { ...process.env, ...loadEnv(mode, process.cwd(), 'VUE_') }
+
   return defineConfig({
     envPrefix: 'VUE_',
     css: {
@@ -33,15 +33,18 @@ export default ({ mode }) => {
       }),
       components({
         dts: false,
-        resolvers: [ElementPlusResolver({
-          importStyle: 'sass'
-        })]
+        resolvers: [
+          ElementPlusResolver({
+            importStyle: 'sass'
+          })
+        ]
       }),
-      process.env.VUE_BUNDLE_VISUALIZE === '1' && visualizer({
-        open: true,
-        gzipSize: true,
-        brotliSize: true
-      })
+      process.env.VUE_BUNDLE_VISUALIZE === '1' &&
+        visualizer({
+          open: true,
+          gzipSize: true,
+          brotliSize: true
+        })
     ],
     resolve: {
       extensions: ['.js', '.vue'],
