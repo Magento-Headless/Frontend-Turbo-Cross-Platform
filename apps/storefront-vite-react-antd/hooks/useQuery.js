@@ -14,7 +14,8 @@ export const useQuery = (document) => {
   }
 
   return useCallback(
-    async (variables = {}, options = {}) => {
+    async (params = { variables: {}, options: {} }) => {
+      const { variables, options } = params
       const query = {
         query: document.loc.source.body,
         operationName: document.definitions[0].name.value,

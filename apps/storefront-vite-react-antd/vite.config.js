@@ -21,7 +21,8 @@ export default ({ mode }) => {
       extensions: ['.js', '.jsx'],
       alias: {
         '@components': path.resolve(__dirname, './components'),
-        '@graphql': path.resolve(__dirname, './graphql')
+        '@graphql': path.resolve(__dirname, './graphql'),
+        '@hooks': path.resolve(__dirname, './hooks')
       }
     },
     build: {
