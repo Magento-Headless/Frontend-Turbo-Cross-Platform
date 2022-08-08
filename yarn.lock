@@ -9820,7 +9820,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-"prettier@^1.18.2 || ^2.0.0", prettier@latest:
+"prettier@^1.18.2 || ^2.0.0", prettier@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
   integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
@@ -12104,7 +12104,7 @@ turbo-windows-arm64@1.4.2:
   resolved "https://registry.yarnpkg.com/turbo-windows-arm64/-/turbo-windows-arm64-1.4.2.tgz#6f57e5e5bc57c92cb8f48458ad51624b9d332b04"
   integrity sha512-2mCPiDnMLY924+M07mMo464cjOr0EITuIkK67IBm3EeEwSlunOmQk+LRc/Jq/Zx6Zuzp5XPZ2fZVvmmSFfogpQ==
 
-turbo@latest:
+turbo@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/turbo/-/turbo-1.4.2.tgz#37635b4f1ff46770f75a34d5c3be6c4360d758e2"
   integrity sha512-ry1vUs5oHCIM+Sef8HED2XsbL28YAeclCrOtDp9zbZZMUX1r5s01COqOJjFJZfDiv2zSlUge9IIQXprM8BfrtA==

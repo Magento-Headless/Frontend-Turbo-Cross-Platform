@@ -23,7 +23,9 @@
     "lint": "turbo run lint",
     "prepare": "husky install"
   },
-  "dependencies": {},
+  "dependencies": {
+    "turbo": "^1.4.2"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
@@ -31,7 +33,6 @@
     "eslint-config-vue3": "*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "latest",
-    "turbo": "latest"
+    "prettier": "^2.7.1"
   }
 }
