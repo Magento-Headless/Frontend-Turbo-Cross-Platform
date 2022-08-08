@@ -4,23 +4,22 @@ const {
   useBabelRc,
   addDecoratorsLegacy,
   addBundleVisualizer,
-  addLessLoader,
   addWebpackAlias,
-  addWebpackPlugin,
   babelInclude,
   fixBabelImports,
   removeModuleScopePlugin
 } = require('customize-cra')
 const dateFormat = require('dateformat')
-const WebpackBarPlugin = require('webpackbar')
 
 const BannerPlugin = require('./compile/banner.webpack')
+const addLessLoader = require('./compile/less.webpack')
 const SystemConfig = require('./config/system.conf')
 const pkg = require('./package.json')
 
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = override(
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useBabelRc(),
   removeModuleScopePlugin(),
   addDecoratorsLegacy(),
@@ -33,11 +32,13 @@ module.exports = override(
       true
     ),
   addLessLoader({
-    lessOptions: {
-      javascriptEnabled: true,
-      modifyVars: SystemConfig.antd.variables
-    },
-    sourceMap: !isProd
+    lessLoaderOptions: {
+      lessOptions: {
+        javascriptEnabled: true,
+        modifyVars: SystemConfig.antd.variables
+      },
+      sourceMap: !isProd
+    }
   }),
   addWebpackAlias({
     '@components': path.resolve(__dirname, './components'),
@@ -45,8 +46,8 @@ module.exports = override(
     '@pages': path.resolve(__dirname, './pages'),
     '@store': path.resolve(__dirname, './store')
   }),
-  addWebpackPlugin(new WebpackBarPlugin()),
   babelInclude([
+    path.resolve(__dirname, '../../packages/ui-react-antd'),
     path.resolve(__dirname, 'components'),
     path.resolve(__dirname, 'config'),
     path.resolve(__dirname, 'pages'),

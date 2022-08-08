@@ -4,13 +4,21 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  parser: 'babel-eslint',
+  extends: ['react'],
   parserOptions: {
+    parser: 'babel-eslint',
     ecmaFeatures: {
       jsx: true
     },
     ecmaVersion: 12,
     sourceType: 'module'
   },
-  rules: {}
+  rules: {
+    'import/no-unresolved': [
+      2,
+      {
+        ignore: ['^@config', '^@components', '^@pages', '^@store']
+      }
+    ]
+  }
 }

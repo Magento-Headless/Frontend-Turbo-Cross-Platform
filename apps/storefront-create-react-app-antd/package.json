@@ -7,8 +7,7 @@
   "private": true,
   "scripts": {
     "dev": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test"
+    "build": "react-app-rewired build"
   },
   "dependencies": {
     "@headless/react-antd": "*",
@@ -29,9 +28,8 @@
     "http-proxy-middleware": "^2.0.6",
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
-    "react-app-rewired": "^2.1.8",
-    "web-vitals": "^2.1.4",
-    "webpackbar": "^4.0.0"
+    "react-app-rewired": "^2.2.1",
+    "web-vitals": "^2.1.4"
   },
   "browserslist": {
     "production": [
