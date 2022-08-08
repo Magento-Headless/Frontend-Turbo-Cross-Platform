@@ -1,0 +1,17 @@
+{
+  "name": "@headless/react-antd",
+  "version": "0.0.0",
+  "main": "index.js",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"**/*.{js,vue,md}\" --fix"
+  },
+  "dependencies": {
+    "antd": "^4.22.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-react": "*"
+  }
+}
