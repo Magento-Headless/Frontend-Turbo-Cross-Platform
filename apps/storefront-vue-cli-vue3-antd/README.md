@@ -1,4 +1,4 @@
-# hello-world
+# storefront-vue-cli-vue3-antd
 
 ## Project setup
 ```
