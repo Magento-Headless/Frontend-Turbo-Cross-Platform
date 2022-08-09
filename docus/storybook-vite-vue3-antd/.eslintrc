@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "vue3",
+    "plugin:storybook/recommended",
+    "plugin:markdown/recommended"
+  ],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false
+  },
+  "rules": {
+    "import/no-unresolved": "off"
+  }
+}
