@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>Vite Story book</p>
+    <span>Vite Story book</span>
   </div>
 </template>

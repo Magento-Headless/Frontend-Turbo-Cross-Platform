@@ -2,17 +2,27 @@
   "name": "storybook-vite-vue3-antd",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "start-storybook -p 3000",
+    "build": "build-storybook"
   },
   "dependencies": {
+    "@headless/vue3-antd": "*",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/vue3": "^6.5.10",
     "@vitejs/plugin-vue": "^3.0.0",
+    "eslint-config-vue3": "*",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "vite": "^3.0.0"
   }
 }
