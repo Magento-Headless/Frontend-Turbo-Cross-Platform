@@ -1,4 +1,5 @@
 const { mergeConfig } = require('vite')
+const pluginImp = require('vite-plugin-imp')
 
 module.exports = {
   stories: [
@@ -21,7 +22,27 @@ module.exports = {
       define: {
         ...config.define,
         global: 'window'
-      }
+      },
+      css: {
+        preprocessorOptions: {
+          less: {
+            javascriptEnabled: true
+          }
+        }
+      },
+      resolve: {
+        extensions: ['.js', '.vue']
+      },
+      plugins: [
+        pluginImp({
+          libList: [
+            {
+              libName: 'ant-design-vue',
+              style: (name) => `ant-design-vue/es/${name}/style`
+            }
+          ]
+        })
+      ]
     })
   }
 }
