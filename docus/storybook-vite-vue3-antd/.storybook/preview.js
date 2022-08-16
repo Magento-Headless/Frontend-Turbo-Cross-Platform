@@ -1,5 +1,7 @@
 import { themes } from '@storybook/theming'
 
+import { brandTheme } from './theme'
+
 export const parameters = {
   actions: {
     argTypesRegex: '^on[A-Z].*'
@@ -14,11 +16,11 @@ export const parameters = {
     current: 'light',
     dark: {
       ...themes.dark,
-      appBg: 'black'
+      ...brandTheme.dark
     },
     light: {
       ...themes.light,
-      appBg: 'white'
+      ...brandTheme.light
     }
   }
 }
