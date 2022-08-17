@@ -1,7 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import path from 'path'
 import react from '@vitejs/plugin-react'
-import graphql from '@rollup/plugin-graphql'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd(), 'REACT_')}
@@ -15,12 +15,17 @@ export default ({ mode }) => {
         },
         jsxRuntime: 'classic'
       }),
-      graphql()
+      process.env.REACT_APP_BUNDLE_VISUALIZE === '1' && visualizer({
+        open: true,
+        gzipSize: true,
+        brotliSize: true
+      })
     ],
     resolve: {
       extensions: ['.js', '.jsx'],
       alias: {
         '@components': path.resolve(__dirname, './components'),
+        '@config': path.resolve(__dirname, './config'),
         '@graphql': path.resolve(__dirname, './graphql'),
         '@hooks': path.resolve(__dirname, './hooks')
       }

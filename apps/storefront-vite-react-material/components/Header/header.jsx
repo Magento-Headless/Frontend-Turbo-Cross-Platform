@@ -1,7 +1,9 @@
+import { Button } from '@mui/material'
+
 const Header = () => {
   return (
     <header>
-      <span>Header</span>
+      <Button variant="contained">Header</Button>
     </header>
   )
 }
