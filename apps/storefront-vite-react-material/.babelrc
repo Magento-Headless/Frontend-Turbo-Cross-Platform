@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    [
+      "direct-import",
+      {
+        "modules": ["@mui/material"]
+      }
+    ]
+  ]
+}
