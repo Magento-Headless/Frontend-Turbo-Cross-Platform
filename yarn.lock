@@ -10906,6 +10906,18 @@ http-proxy-middleware@^2.0.3, http-proxy-middleware@^2.0.6:
     is-plain-obj "^3.0.0"
     micromatch "^4.0.2"
 
+http-proxy-middleware@^3.0.0-beta.0:
+  version "3.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-3.0.0-beta.0.tgz#4c32cd1a190ec3c5d4e255b88c267ef47de0ec32"
+  integrity sha512-99DWW7XRJdLGkVKkXh7sOP1adeSMss2wzI6qAI7klyishj/E8/I+EgtvPuFsSdZ+zDy2D8YizF8vs31Y61Y1bA==
+  dependencies:
+    "@types/http-proxy" "^1.17.8"
+    debug "^4.3.4"
+    http-proxy "^1.18.1"
+    is-glob "^4.0.1"
+    is-plain-obj "^3.0.0"
+    micromatch "^4.0.5"
+
 http-proxy@^1.18.1:
   version "1.18.1"
   resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
@@ -14014,6 +14026,19 @@ nuxi@3.0.0-rc.8:
   optionalDependencies:
     fsevents "~2.3.2"
 
+nuxt-proxy@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/nuxt-proxy/-/nuxt-proxy-0.2.4.tgz#d8dcef923a48cd3e883b89985df5a4d433435817"
+  integrity sha512-iFhhrgMJUF72wZQxjF5M7xDoMq3mdqIdUwQEUIwtWRGX1LJeCryK7SpPAq672EVg7sW8c8ro/tcCzQ/yF1YKeQ==
+  dependencies:
+    "@nuxt/kit" "3.0.0-rc.6"
+    dedent "^0.7.0"
+    defu "^6.0.0"
+    h3 "^0.7.12"
+    http-proxy-middleware "^3.0.0-beta.0"
+    ohash "^0.1.4"
+    pathe "^0.3.2"
+
 nuxt@3.0.0-rc.8:
   version "3.0.0-rc.8"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.0.0-rc.8.tgz#91d5a7d1cfaf36c09cc6bef28724f30a61c88835"
@@ -14167,7 +14192,7 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
-ohash@^0.1.5:
+ohash@^0.1.4, ohash@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/ohash/-/ohash-0.1.5.tgz#7ba53b68c41fc72612ed75942b8f6da3b5d5bbda"
   integrity sha512-qynly1AFIpGWEAW88p6DhMNqok/Swb52/KsiU+Toi7er058Ptvno3tkfTML6wYcEgFgp2GsUziW4Nqn62ciuyw==
